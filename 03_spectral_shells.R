@@ -1,7 +1,7 @@
 library(cluster)
 library(ggplot2)
 
-source("02_spectral_helpers.R")
+source("scripts/02_spectral_helpers.R")
 
 generate_shell_clusters <- function(n_shells, k_per_shell, max_radius,
                                     noise_sd = 0.1, min_radius_fraction = 0.2) {
@@ -92,4 +92,5 @@ text(x = max(results$max_radius),
 dev.off()
 
 write.csv(results, "results/spectral_shells_results.csv", row.names = FALSE)
+
 
