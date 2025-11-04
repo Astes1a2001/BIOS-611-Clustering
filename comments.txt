@@ -8,3 +8,13 @@ algorithm interprets the data as a single group. This transition occurs at large
 side lengths for higher dimensions—around L ≈ 4 for n = 6, L ≈ 3 for n = 5, and L ≈ 2 
 for n = 3–4. This phenomenon highlights that distinguishing clusters becomes more difficult as 
 dimensionality increases.
+
+Task 2:
+
+As max radius decreases, the shells move closer together. This casues points from adjacent shells to 
+fall within the same distance threshold. When this happens, the adjacency graph becomes increasingly 
+connected across shells, and spectral clustering can no longer distinguish them as separate groups. 
+If a smaller d_threshold is used, the algorithm would tolerate closer shells. This might shiftthe failure 
+point to smaller radii. Conversely, a larger d_threshold would cause failure at larger radii.
+
+
