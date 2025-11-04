@@ -1,0 +1,10 @@
+Task 1:
+
+For large side lengths (L ≥ 5), the estimated number of clusters matches the true value for 
+all tested dimensions. This indicates that the method correctly identifies all clusters
+when they are well separated. As side length decreases, the estimated number of 
+clusters abruptly drops to one. This shows that once clusters begin to overlap, the 
+algorithm interprets the data as a single group. This transition occurs at larger 
+side lengths for higher dimensions—around L ≈ 4 for n = 6, L ≈ 3 for n = 5, and L ≈ 2 
+for n = 3–4. This phenomenon highlights that distinguishing clusters becomes more difficult as 
+dimensionality increases.
